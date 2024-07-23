@@ -1,9 +1,10 @@
 # hello-charlie
-                                                      ( h ________________________________ h )
-                                                      ( ㅎ________________________________ㅎ )
 
+<center>( h ________________________________ h )</center>
+<center>( ㅎ ________________________________ ㅎ )</center>
 
 ## Tech Specification
+
 ### 📚 Frameworks, Platforms and Libraries
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat-square&logo=typescript&logoColor=white)
