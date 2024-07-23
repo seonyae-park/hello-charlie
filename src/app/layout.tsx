@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
-import { inter } from "./fonts"
-import "./globals.css"
+import { inter } from "./ui/fonts"
+import "./ui/globals.css"
 
 export const metadata: Metadata = {
   title: "Create Next App",
