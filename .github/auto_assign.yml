@@ -1,0 +1,9 @@
+addAssignees: true
+addAssignees: author
+
+### This feature is used by CODEOWNERS of Github
+# A list of reviewers to be added to pull requests (GitHub user name)
+# reviewers:
+#   - reviewerA
+#   - reviewerB
+#   - reviewerC
