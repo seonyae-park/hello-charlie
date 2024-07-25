@@ -4,17 +4,15 @@ categories:
   - title: "🚀 Features"
     labels:
       - "feature"
-      - "enhancement"
   - title: "🐛 Bug Fixes"
     labels:
       - "fix"
-      - "bug"
   - title: "🧰 Maintenance"
     label:
       - "chore"
       - "refactor"
       - "test"
-      - "environment"
+      - "cleanup"
   - title: "✨ Styles"
     labels:
       - "design"
@@ -28,9 +26,7 @@ autolabeler:
       - '/feat\/.+/'
     title:
       - "/feat:/i"
-  - label:
-      - "fix"
-      - "bug"
+  - label: "fix"
     branch:
       - '/fix\/.+/'
     title:
@@ -55,6 +51,16 @@ autolabeler:
       - '/docs\/.+/'
     title:
       - "/docs:/i"
+  - label: "cleanup"
+    branch:
+      - '/cleanup\/.+/'
+    title:
+      - "/cleanup:/i"
+  - label: "style"
+    branch:
+      - '/style\/.+/'
+    title:
+      - "/style:/i"
   - label: "build"
     branch:
       - '/build\/.+/'
@@ -75,11 +81,6 @@ autolabeler:
       - '/test\/.+/'
     title:
       - "/test:/i"
-  - label: "style"
-    branch:
-      - '/style\/.+/'
-    title:
-      - "/style:/i"
 change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 change-title-escapes: '\<*_&'
 version-resolver:
