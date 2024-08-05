@@ -1,24 +1,15 @@
 "use client"
 
+import { LoginRounded } from "@mui/icons-material"
 import { Button } from "@mui/material"
-// import { signIn, signOut, useSession } from "next-auth/react"
-import Link from "next/link"
+import { signIn } from "next-auth/react"
 
 function LoginButton() {
-  // const { data } = useSession()
-
-  const onClick = async (e: React.MouseEvent<HTMLElement>) => {
-    e.preventDefault()
-    // data ? await signOut() : await signIn("kakao")
-  }
-
+  const onClick = async () => await signIn()
   return (
-    <div>
-      <Button>Avatar</Button>
-      <Link href="#" onClick={onClick}>
-        SignIn
-      </Link>
-    </div>
+    <Button onClick={onClick}>
+      <LoginRounded />
+    </Button>
   )
 }
 

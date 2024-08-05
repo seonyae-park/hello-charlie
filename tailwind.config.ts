@@ -1,20 +1,34 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
+import type { PluginAPI } from "tailwindcss/types/config"
+import plugin from "tailwindcss/plugin"
+import { FlexClass } from "tailwind-style"
+import { flexClasses, spacing, borderRadius, fontSize } from "./src/ui/tailwind"
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/components/**/*.{ts,tsx}", "./src/app/**/*.{ts,tsx}"],
   theme: {
+    spacing: spacing,
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      spacing,
+      borderRadius,
+      fontSize,
     },
   },
-  plugins: [],
-};
-export default config;
+  plugins: [
+    plugin(({ addUtilities, matchUtilities, theme }: PluginAPI) => {
+      addUtilities({
+        ...flexClasses,
+      })
+      matchUtilities(
+        Object.fromEntries(
+          Object.entries<FlexClass>(flexClasses).map(([k, v]) => [
+            k.slice(1),
+            (gap) => ({ ...v, gap }),
+          ])
+        ),
+        { values: theme("spacing") }
+      )
+    }),
+  ],
+}
+export default config
