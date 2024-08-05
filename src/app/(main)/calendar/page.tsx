@@ -1,5 +1,5 @@
 function Page() {
-  return <div>Login</div>
+  return <div>Calendar</div>
 }
 
 export default Page

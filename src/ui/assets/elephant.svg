@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+  <path d="M5.5 1H6.5V2.6H5.5V1Z" fill="black" fill-opacity="0.5" />
+  <path d="M5.5 10.9999V9.3999H6.5V10.9999H5.5Z" fill="black" fill-opacity="0.5" />
+  <path d="M1 6.5V5.5H2.6V6.5H1Z" fill="black" fill-opacity="0.5" />
+  <path d="M10.9999 6.5H9.3999V5.5H10.9999V6.5Z" fill="black" fill-opacity="0.5" />
+  <path d="M2.11084 2.81787L2.81795 2.11076L3.94932 3.24214L3.24221 3.94924L2.11084 2.81787Z" fill="black"
+    fill-opacity="0.5" />
+  <path d="M8.05054 8.75757L8.75764 8.05046L9.88902 9.18183L9.18191 9.88894L8.05054 8.75757Z" fill="black"
+    fill-opacity="0.5" />
+  <path d="M2.81812 9.88916L2.11101 9.18205L3.24238 8.05068L3.94949 8.75779L2.81812 9.88916Z" fill="black"
+    fill-opacity="0.5" />
+  <path d="M8.75757 3.94946L8.05046 3.24236L9.18183 2.11099L9.88894 2.81809L8.75757 3.94946Z" fill="black"
+    fill-opacity="0.5" />
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M8.5 6C8.5 7.38071 7.38071 8.5 6 8.5C4.61929 8.5 3.5 7.38071 3.5 6C3.5 4.61929 4.61929 3.5 6 3.5C7.38071 3.5 8.5 4.61929 8.5 6ZM7.5 6C7.5 6.82843 6.82843 7.5 6 7.5C5.17157 7.5 4.5 6.82843 4.5 6C4.5 5.17157 5.17157 4.5 6 4.5C6.82843 4.5 7.5 5.17157 7.5 6Z"
+    fill="black" fill-opacity="0.5" />
+</svg>
