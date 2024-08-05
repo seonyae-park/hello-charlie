@@ -1,6 +1,6 @@
 import { Box } from "@mui/material"
-// import Header from "@/components/Header"
-// import Footer from "@/components/Footer"
+import Header from "@components/Header"
+import Footer from "@components/Footer"
 
 export default function Landing({
   children,
@@ -9,9 +9,9 @@ export default function Landing({
 }>) {
   return (
     <Box className="flex flex-col w-screen h-screen bg-red-50">
-      {/* <Header /> */}
+      <Header />
       <Box className="grow">{children}</Box>
-      {/* <Footer /> */}
+      <Footer />
     </Box>
   )
 }

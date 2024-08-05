@@ -17,6 +17,13 @@ const nextConfig = {
       },
     ]
   },
+
+  images: {
+    remotePatterns: [
+      { protocol: "http", hostname: "*.kakaocdn.net", port: "" },
+      { protocol: "https", hostname: "phinf.pstatic.net", port: "" },
+    ],
+  },
 }
 
 export default nextConfig
