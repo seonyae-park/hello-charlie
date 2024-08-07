@@ -13,7 +13,7 @@ function Profile({ imageUrl }: ProfileProps) {
 
   return (
     <IconButton
-      className="w-[4.8rem] h-[4.8rem] rounded-full overflow-hidden"
+      className="w-[3.6rem] h-[3.6rem] rounded-full overflow-hidden"
       onClick={onClick}
     >
       {imageUrl ? (
