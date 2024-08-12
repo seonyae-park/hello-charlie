@@ -4,6 +4,7 @@ import { useState } from "react"
 import {
   CalendarMonthRounded,
   HomeRounded,
+  MapRounded,
   PersonRounded,
 } from "@mui/icons-material"
 import { BottomNavigation, BottomNavigationAction } from "@mui/material"
@@ -37,6 +38,12 @@ function Footer() {
         value="/calendar"
         label="Calendar"
         icon={<CalendarMonthRounded />}
+      />
+      <BottomNavigationAction
+        onClick={() => onBottomTabClick("/map")}
+        value="/map"
+        label="Map"
+        icon={<MapRounded />}
       />
       <BottomNavigationAction
         onClick={() => onBottomTabClick("/user")}

@@ -1,7 +1,8 @@
 "use client"
 
 import { signIn } from "next-auth/react"
-import { Box, Button } from "@mui/material"
+import { Box, Button, Typography } from "@mui/material"
+import Image from "next/image"
 import KaKaoLoginIcon from "@assets/LoginKakao.svg"
 import NaverLoginIcon from "@assets/LoginNaver.svg"
 
@@ -10,7 +11,11 @@ function Page() {
     await signIn(provider, { callbackUrl: "/home" })
 
   return (
-    <Box className="w-screen h-screen f-col-center">
+    <Box className="w-screen h-screen f-col-center-16">
+      <Image src="/elephant.png" alt="logo" width="200" height="200" priority />
+      <Typography typography="titleXLarge">
+        Sign In To Your Social Account
+      </Typography>
       <Box className="f-col-center-8">
         <Button className="p-0 rounded-lg" onClick={() => login("kakao")}>
           <KaKaoLoginIcon />

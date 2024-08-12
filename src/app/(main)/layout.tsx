@@ -10,7 +10,7 @@ export default function Landing({
   return (
     <Box className="flex flex-col w-screen h-screen">
       <Header />
-      <Box className="grow max-h-[calc(100%-9.6rem)] overflow-scroll">
+      <Box className="grow max-h-[calc(100%-10.4rem)] overflow-scroll">
         {children}
       </Box>
       <Footer />

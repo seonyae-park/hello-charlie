@@ -1,15 +1,15 @@
 "use client"
 
+import { useState } from "react"
 import { Avatar, IconButton, Menu, MenuItem } from "@mui/material"
 import { signOut } from "next-auth/react"
 import Image from "next/image"
-import { useState } from "react"
 
-interface ProfileProps {
+interface AccountProps {
   imageUrl?: string | null
 }
 
-function Account({ imageUrl }: ProfileProps) {
+function Account({ imageUrl }: AccountProps) {
   const [menuAnchorEl, setMenuAnchorEl] = useState<
     HTMLButtonElement | undefined
   >()
@@ -24,7 +24,14 @@ function Account({ imageUrl }: ProfileProps) {
         }
       >
         {imageUrl ? (
-          <Image src={imageUrl} alt="profile" fill className="object-cover" />
+          <Image
+            src={imageUrl}
+            alt="profile"
+            fill
+            sizes="100vh"
+            className="object-cover"
+            priority
+          />
         ) : (
           <Avatar />
         )}
