@@ -2,14 +2,14 @@ import { Box } from "@mui/material"
 import LogoIcon from "@assets/Logo.svg"
 import { getServerSession } from "next-auth"
 import LoginButton from "./LogInButton"
-import Profile from "./Profile"
+import Account from "./Account"
 
 async function Header() {
   const session = await getServerSession()
   return (
-    <Box className="f-row-between-center-4 p-8 shadow-lg">
+    <Box className="f-row-between-center-4 px-12 py-8 shadow-md">
       <LogoIcon width="32" height="32" />
-      {session ? <Profile imageUrl={session.user?.image} /> : <LoginButton />}
+      {session ? <Account imageUrl={session.user?.image} /> : <LoginButton />}
     </Box>
   )
 }

@@ -11,6 +11,12 @@ const flexClasses = {
     justifyContent: "space-between",
     alignItems: "center",
   },
+  ".f-row-start-center": {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    alignItems: "center",
+  },
   ".f-col-center": {
     display: "flex",
     flexDirection: "column",

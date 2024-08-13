@@ -19,29 +19,20 @@ export const authOptions: NextAuthOptions = {
     }),
   ],
 
-  // 없으면 기본 제공하는 /api/auth/signin 페이지로 이동
-  // TODO. 현재 다른 경로로 설정해도 /api/auth/signin 으로 이동함
-  pages: {
-    // signIn: "/auth/signin",
-    // signOut: "/auth/signout",
-  },
-
   secret: process.env.SECRET,
 
   callbacks: {
-    // async jwt({ token, user }) {
-    //   return { ...token, ...user }
-    // },
+    async jwt({ token, user }) {
+      // console.log(token, user)
+      return { ...token, ...user }
+    },
     // async session({ session, token }) {
     //   session.user = token
     //   return session
     // },
   },
 
-  events: {
-    async signOut(msg) {
-      // console.log(msg)
-    },
-    async signIn() {},
+  pages: {
+    signIn: "/auth/signin",
   },
 }
