@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import {
   CalendarMonthRounded,
   HomeRounded,
@@ -8,7 +8,7 @@ import {
   PersonRounded,
 } from "@mui/icons-material"
 import { BottomNavigation, BottomNavigationAction } from "@mui/material"
-import { useRouter } from "next/navigation"
+import { useRouter, usePathname } from "next/navigation"
 
 function Footer() {
   const router = useRouter()
@@ -18,6 +18,13 @@ function Footer() {
     if (tab === bottomTab) return
     router.push(tab)
   }
+
+  const pathname = usePathname()
+  useEffect(() => {
+    if (pathname) {
+      setBottomTab(pathname)
+    }
+  }, [pathname])
 
   return (
     <BottomNavigation

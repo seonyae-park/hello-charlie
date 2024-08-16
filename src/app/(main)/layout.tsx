@@ -8,12 +8,12 @@ export default function Landing({
   children: React.ReactNode
 }>) {
   return (
-    <Box className="flex flex-col w-screen h-screen">
+    <Box className="f-col-between-stretch w-screen h-screen">
       <Header />
-      <Box className="grow max-h-[calc(100%-10.4rem)] overflow-scroll">
-        {children}
+      <Box className="grow max-h-full overflow-y-scroll">{children}</Box>
+      <Box className="">
+        <Footer />
       </Box>
-      <Footer />
     </Box>
   )
 }
