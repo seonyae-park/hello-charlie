@@ -1,7 +1,11 @@
 import type { Metadata } from "next"
+import { CssBaseline } from "@mui/material"
+import { Experimental_CssVarsProvider as ThemeProvider } from "@mui/material/styles"
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter"
 import { inter } from "@ui/fonts"
-import "@ui/globals.css"
 import AuthContext from "@context/AuthContext"
+import theme from "@ui/theme"
+import "@ui/globals.css"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AuthContext>{children}</AuthContext>
+        <AppRouterCacheProvider options={{ key: "css", enableCssLayer: true }}>
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <AuthContext>{children}</AuthContext>
+          </ThemeProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   )

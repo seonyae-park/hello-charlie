@@ -1,8 +1,8 @@
 import { Box } from "@mui/material"
 import LogoIcon from "@assets/Logo.svg"
 import { getServerSession } from "next-auth"
-import LoginButton from "./LogInButton"
-import Account from "./Account"
+import LoginButton from "@components/LogInButton"
+import Account from "@components/Account"
 
 async function Header() {
   const session = await getServerSession()
