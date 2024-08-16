@@ -32,8 +32,17 @@ const fontSize = {
   xl: "2rem",
 }
 
+const fontFamily = {
+  sans: ["var(--font-inter)"],
+  mono: ["var(--font-roboto-mono)"],
+  gogo: ["var(--font-league-gothic)"],
+  oxan: ["var(--font-oxanium)"],
+  pret: ["var(--font-pretend)"],
+}
+
 module.exports = {
   spacing,
   borderRadius,
   fontSize,
+  fontFamily,
 }

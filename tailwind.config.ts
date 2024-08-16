@@ -3,7 +3,7 @@ import type { PluginAPI } from "tailwindcss/types/config"
 import plugin from "tailwindcss/plugin"
 import { FlexClass } from "tailwind-style"
 import { flexClasses } from "./src/ui/tailwind"
-import { borderRadius, fontSize, spacing } from "./src/ui/preset"
+import { spacing, borderRadius, fontSize, fontFamily } from "./src/ui/preset"
 
 const config: Config = {
   content: ["./src/components/**/*.{ts,tsx}", "./src/app/**/*.{ts,tsx}"],
@@ -13,6 +13,7 @@ const config: Config = {
       spacing,
       borderRadius,
       fontSize,
+      fontFamily,
     },
   },
   plugins: [

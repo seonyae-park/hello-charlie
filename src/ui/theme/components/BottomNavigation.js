@@ -1,3 +1,5 @@
+import Typography from "./Typography"
+
 const BottomNavigation = {
   MuiBottomNavigation: {
     styleOverrides: {
@@ -9,6 +11,16 @@ const BottomNavigation = {
           },
         },
       }),
+    },
+  },
+  MuiBottomNavigationAction: {
+    styleOverrides: {
+      label: {
+        ...Typography.body2XSmall,
+        ".Mui-selected &": {
+          ...Typography.title2XSmall,
+        },
+      },
     },
   },
 }
