@@ -52,12 +52,14 @@ function Footer() {
         label="Map"
         icon={<MapRounded />}
       />
-      <BottomNavigationAction
-        onClick={() => onBottomTabClick("/user")}
-        value="/user"
-        label="User"
-        icon={<PersonRounded />}
-      />
+      {
+        <BottomNavigationAction
+          onClick={() => onBottomTabClick("/user")}
+          value="/user"
+          label="User"
+          icon={<PersonRounded />}
+        />
+      }
     </BottomNavigation>
   )
 }

@@ -8,7 +8,7 @@ const Typography = {
   },
   titleLarge: {
     fontWeight: 600,
-    fontSize: fontSize.lg,
+    fontSize: fontSize.xl,
     lineHeight: "2.2rem",
   },
   titleSmall: {

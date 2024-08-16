@@ -13,7 +13,7 @@ function Page() {
   return (
     <Box className="w-screen h-screen f-col-center-16">
       <Image src="/elephant.png" alt="logo" width="200" height="200" priority />
-      <Typography typography="titleXLarge">
+      <Typography typography="titleSmall" className="text-">
         Sign In To Your Social Account
       </Typography>
       <Box className="f-col-center-8">

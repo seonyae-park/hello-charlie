@@ -1,9 +1,8 @@
-import Typography from "./Typography"
-
 const BottomNavigation = {
   MuiBottomNavigation: {
     styleOverrides: {
       root: ({ theme }) => ({
+        height: "6.4rem",
         ".Mui-selected": {
           color: theme.vars.palette.primary.main,
           "> svg > path": {
@@ -16,9 +15,14 @@ const BottomNavigation = {
   MuiBottomNavigationAction: {
     styleOverrides: {
       label: {
-        ...Typography.body2XSmall,
+        fontWeight: 400,
+        fontSize: "1.2rem",
+        lineHeight: "2.2rem",
+
         ".Mui-selected &": {
-          ...Typography.title2XSmall,
+          fontWeight: 600,
+          fontSize: "1.2rem",
+          lineHeight: "2.2rem",
         },
       },
     },
