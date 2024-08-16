@@ -1,7 +1,5 @@
 function Page() {
-  return (
-    <div className="bg-gray-400 size-full f-col-center font-serif">Map</div>
-  )
+  return <div className="bg-gray-400 size-full f-col-center">Map</div>
 }
 
 export default Page
