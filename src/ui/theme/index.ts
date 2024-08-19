@@ -1,7 +1,8 @@
 "use client"
 
 import { experimental_extendTheme as extendTheme } from "@mui/material/styles"
-import { blue, red } from "@mui/material/colors"
+import { blue } from "@mui/material/colors"
+import SvgIcon from "./components/SvgIcon"
 import IconButton from "./components/IconButton"
 import Typography from "./components/Typography"
 import BottomNavigation from "./components/BottomNavigation"
@@ -28,6 +29,7 @@ const theme = extendTheme({
   components: {
     ...IconButton,
     ...BottomNavigation,
+    ...SvgIcon,
   },
 })
 
